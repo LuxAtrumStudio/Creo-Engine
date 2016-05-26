@@ -13,18 +13,45 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Conscientia Engine">
+      <UniqueIdentifier>{0d45922c-6d8f-4f39-ba5a-373b8fac499e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Creo Engine">
+      <UniqueIdentifier>{68767f58-a62f-45fb-bc37-5fd73af33bd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Creo Engine\Source Files">
+      <UniqueIdentifier>{aef66c7b-f38b-4c54-a4a4-8abe0c64e5d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Creo Engine\Header Files">
+      <UniqueIdentifier>{bc8a0480-5800-44ae-93ca-60ad7abc334f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Conscientia Engine\Source Files">
+      <UniqueIdentifier>{fd538af4-0770-4185-a3e7-aa4170437aac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Conscientia Engine\Header Files">
+      <UniqueIdentifier>{860f1b13-94a1-4d10-a678-f9d0b627489e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Creo Engine\Resource Files">
+      <UniqueIdentifier>{3151fa79-38e4-456c-92f7-12b4845cd5ed}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Conscientia.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Conscientia Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Logging.cpp">
+      <Filter>Conscientia Engine\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Conscientia.h">
-      <Filter>Header Files</Filter>
+      <Filter>Conscientia Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Logging.h">
+      <Filter>Conscientia Engine\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
