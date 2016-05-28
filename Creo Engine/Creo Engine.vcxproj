@@ -119,6 +119,12 @@
     <ClInclude Include="Conscientia.h" />
     <ClInclude Include="Logging.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Log.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Log Code Key.dev" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

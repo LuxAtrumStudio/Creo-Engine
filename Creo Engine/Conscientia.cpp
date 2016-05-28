@@ -15,6 +15,7 @@ struct window {
 	int cursorX, cursorY;
 	bool border, title;
 };
+
 vector<window> windows;
 int currentWindowPointer = 0;
 bool autoRefresh = false;

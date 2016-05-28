@@ -54,4 +54,14 @@
       <Filter>Conscientia Engine\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Log.log">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Log Code Key.dev">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>
