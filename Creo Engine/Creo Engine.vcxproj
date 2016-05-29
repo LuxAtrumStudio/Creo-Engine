@@ -117,6 +117,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Conscientia.h" />
+    <ClInclude Include="Libraries.h" />
     <ClInclude Include="Logging.h" />
   </ItemGroup>
   <ItemGroup>

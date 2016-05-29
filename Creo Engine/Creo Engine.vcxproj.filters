@@ -53,6 +53,9 @@
     <ClInclude Include="Logging.h">
       <Filter>Conscientia Engine\Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Libraries.h">
+      <Filter>Creo Engine\Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Log.log">
