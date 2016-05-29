@@ -113,12 +113,15 @@
   <ItemGroup>
     <ClCompile Include="Conscientia.cpp" />
     <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Framework.cpp" />
     <ClCompile Include="Logging.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Conscientia.h" />
+    <ClInclude Include="Framework.h" />
     <ClInclude Include="Libraries.h" />
     <ClInclude Include="Logging.h" />
+    <ClInclude Include="OpenGL Libraries.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Log.log" />
