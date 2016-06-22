@@ -4,3 +4,5 @@
 #include <fstream>
 #include <sstream>
 #include <string.h>
+#include <exception>
+#include <stdexcept>

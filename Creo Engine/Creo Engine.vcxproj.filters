@@ -19,9 +19,6 @@
     <Filter Include="Creo Engine">
       <UniqueIdentifier>{68767f58-a62f-45fb-bc37-5fd73af33bd2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Creo Engine\Source Files">
-      <UniqueIdentifier>{aef66c7b-f38b-4c54-a4a4-8abe0c64e5d1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Creo Engine\Header Files">
       <UniqueIdentifier>{bc8a0480-5800-44ae-93ca-60ad7abc334f}</UniqueIdentifier>
     </Filter>
@@ -37,11 +34,35 @@
     <Filter Include="Creo Engine\Header Files\Library Declarations">
       <UniqueIdentifier>{5cc87cd2-9238-40ee-88e3-5ca27d438932}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Creo Engine\Header Files\Class Headers">
-      <UniqueIdentifier>{c01a815a-cf78-4625-bee1-f7dcbb7905ee}</UniqueIdentifier>
+    <Filter Include="Creo Engine\Header Files\Definitions">
+      <UniqueIdentifier>{7d641d1a-9c34-43bf-81f3-2aa2df1ce903}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Creo Engine\Source Files\Class Source">
-      <UniqueIdentifier>{8518bb7b-c206-48cb-84a3-72d792a44024}</UniqueIdentifier>
+    <Filter Include="Creo Engine\Core">
+      <UniqueIdentifier>{47a3f491-c92e-4018-8e87-6c6902c25a95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Creo Engine\Core\Header Files">
+      <UniqueIdentifier>{3895d04f-f11d-4bcd-90c6-06a7c8fa4a9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Creo Engine\Core\Source Files">
+      <UniqueIdentifier>{f9442bb7-6548-4946-8e63-aea5f7d43646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Creo Engine\Graphics">
+      <UniqueIdentifier>{b7c18aa2-796e-44c2-a5d4-fe868a51077c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Creo Engine\Graphics\Header Files">
+      <UniqueIdentifier>{4b4e2fc1-c192-438b-8eb6-7389f8f77370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Creo Engine\Graphics\Source Files">
+      <UniqueIdentifier>{31869a4d-008b-46d6-b8fd-0f7280b46d02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Creo Engine\Audio">
+      <UniqueIdentifier>{8ebba766-3534-4ed9-937e-eb3eb6dfaaec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Creo Engine\Audio\Header Files">
+      <UniqueIdentifier>{f58a11a9-0862-42a0-99d7-17f07c95d581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Creo Engine\Audio\Source Files">
+      <UniqueIdentifier>{57fe37ac-8050-45b9-b273-3390ad79c203}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -51,18 +72,18 @@
     <ClCompile Include="Conscientia.cpp">
       <Filter>Conscientia Engine\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Logging.cpp">
-      <Filter>Conscientia Engine\Source Files</Filter>
+    <ClCompile Include="Graphics Framework.cpp">
+      <Filter>Creo Engine\Graphics\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Framework.cpp">
-      <Filter>Creo Engine\Source Files\Class Source</Filter>
+    <ClCompile Include="Creo Core.cpp">
+      <Filter>Creo Engine\Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics Core.cpp">
+      <Filter>Creo Engine\Graphics\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Conscientia.h">
-      <Filter>Conscientia Engine\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Logging.h">
       <Filter>Conscientia Engine\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Libraries.h">
@@ -71,8 +92,17 @@
     <ClInclude Include="OpenGL Libraries.h">
       <Filter>Creo Engine\Header Files\Library Declarations</Filter>
     </ClInclude>
-    <ClInclude Include="Framework.h">
-      <Filter>Creo Engine\Header Files\Class Headers</Filter>
+    <ClInclude Include="Graphics Framework.h">
+      <Filter>Creo Engine\Graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Creo Core.h">
+      <Filter>Creo Engine\Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics Core.h">
+      <Filter>Creo Engine\Graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics Header.h">
+      <Filter>Creo Engine\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

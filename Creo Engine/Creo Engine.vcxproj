@@ -76,6 +76,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -113,14 +116,17 @@
   <ItemGroup>
     <ClCompile Include="Conscientia.cpp" />
     <ClCompile Include="Core.cpp" />
-    <ClCompile Include="Framework.cpp" />
-    <ClCompile Include="Logging.cpp" />
+    <ClCompile Include="Creo Core.cpp" />
+    <ClCompile Include="Graphics Core.cpp" />
+    <ClCompile Include="Graphics Framework.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Conscientia.h" />
-    <ClInclude Include="Framework.h" />
+    <ClInclude Include="Creo Core.h" />
+    <ClInclude Include="Graphics Core.h" />
+    <ClInclude Include="Graphics Framework.h" />
+    <ClInclude Include="Graphics Header.h" />
     <ClInclude Include="Libraries.h" />
-    <ClInclude Include="Logging.h" />
     <ClInclude Include="OpenGL Libraries.h" />
   </ItemGroup>
   <ItemGroup>

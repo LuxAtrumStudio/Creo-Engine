@@ -1,12 +1,12 @@
 #include <iostream>
 #include "Conscientia.h"
-#include "Logging.h"
+#include "Graphics Framework.h"
 using namespace std;
 
-int main() {
-	CONSCIENTIA::initializeConscientia();
-	LOGGING::initializeLogging();
-	LOGGING::terminateLogging();
-	CONSCIENTIA::terminateConscientia();
+int main(int argc, char** argv) {
+	CONSCIENTIA::InitializeConscientia();
+	LOGGING::InitializeLogging();
+	LOGGING::TerminateLogging();
+	CONSCIENTIA::TerminateConscientia();
 	return(1);
 }
