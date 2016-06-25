@@ -77,7 +77,7 @@
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>freeglut.lib;glload.lib;glutil.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -114,26 +114,38 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Conscientia.cpp" />
+    <ClCompile Include="Conscientia\Conscientia.cpp" />
     <ClCompile Include="Core.cpp" />
-    <ClCompile Include="Creo Core.cpp" />
-    <ClCompile Include="Graphics Core.cpp" />
-    <ClCompile Include="Graphics Framework.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Conscientia.h" />
-    <ClInclude Include="Creo Core.h" />
-    <ClInclude Include="Graphics Core.h" />
-    <ClInclude Include="Graphics Framework.h" />
-    <ClInclude Include="Graphics Header.h" />
-    <ClInclude Include="Libraries.h" />
-    <ClInclude Include="OpenGL Libraries.h" />
+    <ClCompile Include="Creo\Creo Core.cpp" />
+    <ClCompile Include="Creo\Graphics\Graphics Core.cpp" />
+    <ClCompile Include="Creo\Graphics\Graphics Data.cpp" />
+    <ClCompile Include="Creo\Graphics\Graphics Framework.cpp" />
+    <ClCompile Include="Creo\Graphics\Graphics Object.cpp" />
+    <ClCompile Include="Creo\Graphics\Graphics Points.cpp" />
+    <ClCompile Include="Creo\Graphics\Graphics Shaders.cpp" />
+    <ClCompile Include="Creo\Graphics\Graphics Windows.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Log.log" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Log Code Key.dev" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Conscientia\Conscientia.h" />
+    <ClInclude Include="Creo\Creo Core.h" />
+    <ClInclude Include="Creo\Declarations\Definitions.h" />
+    <ClInclude Include="Creo\Declarations\Math Definitions.h" />
+    <ClInclude Include="Creo\Graphics\Graphics Core.h" />
+    <ClInclude Include="Creo\Graphics\Graphics Data.h" />
+    <ClInclude Include="Creo\Graphics\Graphics Framework.h" />
+    <ClInclude Include="Creo\Graphics\Graphics Headers.h" />
+    <ClInclude Include="Creo\Graphics\Graphics Object.h" />
+    <ClInclude Include="Creo\Graphics\Graphics Points.h" />
+    <ClInclude Include="Creo\Graphics\Graphics Shaders.h" />
+    <ClInclude Include="Creo\Graphics\Graphics Windows.h" />
+    <ClInclude Include="Creo\Group Headers\Libraries.h" />
+    <ClInclude Include="Creo\Group Headers\OpenGL Libraries.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

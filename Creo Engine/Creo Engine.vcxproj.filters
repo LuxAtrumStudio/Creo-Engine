@@ -69,41 +69,33 @@
     <ClCompile Include="Core.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conscientia.cpp">
+    <ClCompile Include="Conscientia\Conscientia.cpp">
       <Filter>Conscientia Engine\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Graphics Framework.cpp">
-      <Filter>Creo Engine\Graphics\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Creo Core.cpp">
+    <ClCompile Include="Creo\Creo Core.cpp">
       <Filter>Creo Engine\Core\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Graphics Core.cpp">
+    <ClCompile Include="Creo\Graphics\Graphics Core.cpp">
       <Filter>Creo Engine\Graphics\Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Conscientia.h">
-      <Filter>Conscientia Engine\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Libraries.h">
-      <Filter>Creo Engine\Header Files\Library Declarations</Filter>
-    </ClInclude>
-    <ClInclude Include="OpenGL Libraries.h">
-      <Filter>Creo Engine\Header Files\Library Declarations</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics Framework.h">
-      <Filter>Creo Engine\Graphics\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Creo Core.h">
-      <Filter>Creo Engine\Core\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics Core.h">
-      <Filter>Creo Engine\Graphics\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics Header.h">
-      <Filter>Creo Engine\Graphics</Filter>
-    </ClInclude>
+    <ClCompile Include="Creo\Graphics\Graphics Data.cpp">
+      <Filter>Creo Engine\Graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Creo\Graphics\Graphics Framework.cpp">
+      <Filter>Creo Engine\Graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Creo\Graphics\Graphics Object.cpp">
+      <Filter>Creo Engine\Graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Creo\Graphics\Graphics Points.cpp">
+      <Filter>Creo Engine\Graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Creo\Graphics\Graphics Shaders.cpp">
+      <Filter>Creo Engine\Graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Creo\Graphics\Graphics Windows.cpp">
+      <Filter>Creo Engine\Graphics\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Log.log">
@@ -114,5 +106,49 @@
     <None Include="Log Code Key.dev">
       <Filter>Resource Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Conscientia\Conscientia.h">
+      <Filter>Conscientia Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Creo\Group Headers\Libraries.h">
+      <Filter>Creo Engine\Header Files\Library Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="Creo\Group Headers\OpenGL Libraries.h">
+      <Filter>Creo Engine\Header Files\Library Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="Creo\Declarations\Definitions.h">
+      <Filter>Creo Engine\Header Files\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Creo\Declarations\Math Definitions.h">
+      <Filter>Creo Engine\Header Files\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Creo\Creo Core.h">
+      <Filter>Creo Engine\Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Creo\Graphics\Graphics Core.h">
+      <Filter>Creo Engine\Graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Creo\Graphics\Graphics Data.h">
+      <Filter>Creo Engine\Graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Creo\Graphics\Graphics Framework.h">
+      <Filter>Creo Engine\Graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Creo\Graphics\Graphics Object.h">
+      <Filter>Creo Engine\Graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Creo\Graphics\Graphics Points.h">
+      <Filter>Creo Engine\Graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Creo\Graphics\Graphics Shaders.h">
+      <Filter>Creo Engine\Graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Creo\Graphics\Graphics Windows.h">
+      <Filter>Creo Engine\Graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Creo\Graphics\Graphics Headers.h">
+      <Filter>Creo Engine\Graphics\Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

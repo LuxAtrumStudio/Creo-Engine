@@ -729,8 +729,8 @@ namespace LOGGING {
 		dateTime = temp;
 		string File = "Log Data.log";
 		if (logOpen == true) {
-			LogSuccess("Created New Log File", "Logging.cpp/initializeLogging");
-			LogData(dateTime, "Consolas.cpp/initializeLogging");
+			LogSuccess("Created New Log File", "Conscientia.cpp/LOGGING/InitializeLogging");
+			LogData(dateTime, "Conscientia.cpp/LOGGING/InitializeLogging");
 		}
 	}
 	void LogError(string log, string location) {
@@ -759,7 +759,7 @@ namespace LOGGING {
 		}
 	}
 	void TerminateLogging() {
-		LogSuccess("Terminated Log", "Logging.cpp/terminateLogging");
+		LogSuccess("Terminated Log", "Conscientia.cpp/LOGGING/TerminateLogging");
 		logFile.close();
 	}
 }

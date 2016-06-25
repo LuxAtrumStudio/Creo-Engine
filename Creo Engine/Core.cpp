@@ -1,8 +1,6 @@
 #include <iostream>
-#include "Conscientia.h"
-#include "Graphics Framework.h"
+#include "Conscientia\Conscientia.h"
 using namespace std;
-
 int main(int argc, char** argv) {
 	CONSCIENTIA::InitializeConscientia();
 	LOGGING::InitializeLogging();
