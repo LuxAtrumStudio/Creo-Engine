@@ -78,6 +78,8 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>freeglut.lib;glload.lib;glutil.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>/ENTRY:mainCRTStartup %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -136,6 +138,7 @@
     <ClInclude Include="Creo\Creo Core.h" />
     <ClInclude Include="Creo\Declarations\Definitions.h" />
     <ClInclude Include="Creo\Declarations\Math Definitions.h" />
+    <ClInclude Include="Creo\Declarations\Program Definitions.h" />
     <ClInclude Include="Creo\Graphics\Graphics Core.h" />
     <ClInclude Include="Creo\Graphics\Graphics Data.h" />
     <ClInclude Include="Creo\Graphics\Graphics Framework.h" />

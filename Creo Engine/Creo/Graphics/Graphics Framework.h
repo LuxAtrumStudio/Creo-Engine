@@ -4,10 +4,12 @@
 #include "Graphics Object.h"
 using namespace std;
 
-class GFRAMEWORK {
+class GFRAMEWORK
+{
 public:
+	GWINDOWS gWindow;
 	GFRAMEWORK();
 	~GFRAMEWORK();
-
+	void InitializeGLUT(int* argc, char** argv);
 private:
 };

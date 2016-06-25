@@ -150,5 +150,8 @@
     <ClInclude Include="Creo\Graphics\Graphics Headers.h">
       <Filter>Creo Engine\Graphics\Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Creo\Declarations\Program Definitions.h">
+      <Filter>Creo Engine\Header Files\Definitions</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
