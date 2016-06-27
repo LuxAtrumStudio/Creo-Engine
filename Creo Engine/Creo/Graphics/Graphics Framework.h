@@ -11,5 +11,7 @@ public:
 	GFRAMEWORK();
 	~GFRAMEWORK();
 	void InitializeGLUT(int* argc, char** argv);
+	void RenderScene();
+	void ClearWindow();
 private:
 };
