@@ -33,8 +33,13 @@ void GWINDOWS::SetSize(int width, int height)
 
 void GWINDOWS::GenorateWindow()
 {
-	windowPointer = glutCreateWindow(programName.c_str());
-	LOGGING::LogSuccess("Created window", "Graphics Windows.cpp/GWINDOWS/GenorateWindow");
+	string windowTitle;
+	windowTitle = programName;
+	if (programDevelopmentMode == true) {
+		windowTitle = "DEV:" + windowTitle + " " + to_string(programMajorVersion) + "." + to_string(programMinorVersion) + "." + to_string(programSubVersion) + "." + to_string(programUpdateVersion);
+	}
+	windowPointer = glutCreateWindow(windowTitle.c_str());
+	LOGGING::LogSuccess("Created window with title: \"" + windowTitle + "\"", "Graphics Windows.cpp/GWINDOWS/GenorateWindow");
 }
 
 void GWINDOWS::GenorateWindowFromSettings()

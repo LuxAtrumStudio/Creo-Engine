@@ -13,5 +13,6 @@ public:
 	void InitializeGLUT(int* argc, char** argv);
 	void RenderScene();
 	void ClearWindow();
+	void ChangeSize(int width, int height);
 private:
 };

@@ -3,7 +3,13 @@
 #include "../Group Headers/OpenGL Libraries.h"
 using namespace std;
 
-string programName = "Creo Engine 0.0.1";
+bool programDevelopmentMode = true;
+
+string programName = "Creo Engine";
+int programMajorVersion = 0;
+int programMinorVersion = 0;
+int programSubVersion = 1;
+int programUpdateVersion = 2;
 unsigned int programDisplayMode = GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA;
 int programWindowPositionX = 100;
 int programWindowPositionY = 100;
