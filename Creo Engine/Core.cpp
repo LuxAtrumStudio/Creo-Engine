@@ -5,20 +5,11 @@
 using namespace std;
 GFRAMEWORK gFramework;
 
-void DisplayFunc() {
-	gFramework.RenderScene();
-}
-void ReshapeFunc(int width, int height) {
-	gFramework.ChangeSize(width, height);
-}
-
 int main(int argc, char** argv) {
 	LOGGING::InitializeLogging();
-	gFramework.InitializeGLUT(&argc, argv);
+	gFramework.InitializeGLFW();
 	gFramework.gWindow.GenorateWindowFromSettings();
-	glutDisplayFunc(DisplayFunc);
-	glutReshapeFunc(ReshapeFunc);
-	glutMainLoop();
+	gFramework.InitializeGLEW();
 	LOGGING::TerminateLogging();
 	return(1);
 }

@@ -10,9 +10,8 @@ public:
 	GWINDOWS gWindow;
 	GFRAMEWORK();
 	~GFRAMEWORK();
-	void InitializeGLUT(int* argc, char** argv);
-	void RenderScene();
-	void ClearWindow();
-	void ChangeSize(int width, int height);
+
+	void InitializeGLFW();
+	void InitializeGLEW();
 private:
 };

@@ -8,12 +8,10 @@ class GWINDOWS
 public:
 	GWINDOWS();
 	~GWINDOWS();
-	void SetDisplayMode(unsigned int mode);
-	void SetPosition(int x, int y);
-	void SetSize(int width, int height);
-	void GenorateWindow();
+	GLFWwindow* window;
+	void GenorateWindow(int width, int height, string name);
 	void GenorateWindowFromSettings();
+	void SetWindowData();
+	void MakeCurrent();
 private:
-	int positionX, positionY, width, height, windowPointer;
-	unsigned int displayMode;
 };

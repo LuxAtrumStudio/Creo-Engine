@@ -96,6 +96,15 @@
     <ClCompile Include="Creo\Graphics\Graphics Windows.cpp">
       <Filter>Creo Engine\Graphics\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Creo\Declarations\Global Variables.cpp">
+      <Filter>Creo Engine\Header Files\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Creo\Declarations\Math Definitions.cpp">
+      <Filter>Creo Engine\Header Files\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Creo\Declarations\Program Definitions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Log.log">
@@ -151,6 +160,9 @@
       <Filter>Creo Engine\Graphics\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Creo\Declarations\Program Definitions.h">
+      <Filter>Creo Engine\Header Files\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Creo\Declarations\Global Variables.h">
       <Filter>Creo Engine\Header Files\Definitions</Filter>
     </ClInclude>
   </ItemGroup>

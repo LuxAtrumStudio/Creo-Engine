@@ -1,4 +1,3 @@
-#include <glload\gl_load.hpp>
-#include <GL\freeglut.h>
-//#include <glutil\glutil.h>
-//#include <glutil\Shader.h>
+#include <GL\glew.h>
+#include <GLFW\glfw3.h>
+#include <glm\glm.hpp>

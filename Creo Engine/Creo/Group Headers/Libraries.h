@@ -6,3 +6,5 @@
 #include <string.h>
 #include <exception>
 #include <stdexcept>
+
+#include "../Declarations/Definitions.h"
