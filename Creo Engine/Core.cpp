@@ -10,6 +10,10 @@ int main(int argc, char** argv) {
 	gFramework.InitializeGLFW();
 	gFramework.gWindow.GenorateWindowFromSettings();
 	gFramework.InitializeGLEW();
+	do {
+		glfwSwapBuffers(gFramework.gWindow.window);
+		glfwPollEvents();
+	} while (glfwGetKey(gFramework.gWindow.window, GLFW_KEY_ESCAPE) != GLFW_PRESS && glfwWindowShouldClose(gFramework.gWindow.window) == 0);
 	LOGGING::TerminateLogging();
 	return(1);
 }
