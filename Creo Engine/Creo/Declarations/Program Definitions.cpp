@@ -9,6 +9,6 @@ string programName = "Creo Engine";
 int programMajorVersion = 0;
 int programMinorVersion = 0;
 int programSubVersion = 1;
-int programUpdateVersion = 3;
+int programUpdateVersion = 4;
 int programWindowWidth = 1920;
 int programWindowHeight = 1080;

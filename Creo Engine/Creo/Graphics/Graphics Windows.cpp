@@ -43,9 +43,18 @@ void GWINDOWS::SetWindowData()
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+	LOGGING::LogSuccess("Set window data", "Graphics Windows.cpp/GWINDOW/SetWindowData");
 }
 
 void GWINDOWS::MakeCurrent()
 {
 	glfwMakeContextCurrent(window);
+	LOGGING::LogSuccess("Made current window current context", "Graphics Windows.cpp/GWINDOW/MakeCurrent");
+}
+
+void GWINDOWS::CreateVertexArray()
+{
+	glGenVertexArrays(1, &VertexArrayID);
+	glBindVertexArray(VertexArrayID);
+	LOGGING::LogSuccess("Created vertex array", "Graphics Windows.cpp/GWINDOW/CreateVertexArray");
 }

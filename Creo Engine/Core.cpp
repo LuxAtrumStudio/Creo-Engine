@@ -10,6 +10,8 @@ int main(int argc, char** argv) {
 	gFramework.InitializeGLFW();
 	gFramework.gWindow.GenorateWindowFromSettings();
 	gFramework.InitializeGLEW();
+	gFramework.gWindow.CreateVertexArray();
+	gFramework.gObject.Regular2DPolyGenVertices(3, 1, 1);
 	do {
 		glfwSwapBuffers(gFramework.gWindow.window);
 		glfwPollEvents();

@@ -9,6 +9,7 @@ class GOBJECT {
 public:
 	GOBJECT();
 	~GOBJECT();
-
+	vector<glm::vec3> vertices;
+	void Regular2DPolyGenVertices(int sides, float sizeX, float sizeY);
 private:
 };

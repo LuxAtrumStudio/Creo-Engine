@@ -8,6 +8,7 @@ class GFRAMEWORK
 {
 public:
 	GWINDOWS gWindow;
+	GOBJECT gObject;
 	GFRAMEWORK();
 	~GFRAMEWORK();
 
