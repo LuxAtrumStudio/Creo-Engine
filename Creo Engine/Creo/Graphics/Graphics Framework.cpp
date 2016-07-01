@@ -51,7 +51,7 @@ string GFRAMEWORK::GetFileAsString(string filePath)
 		LOGGING::LogSuccess("Loaded file with file path: \"" + filePath + "\"", "Graphics Framework.cpp/GFRAMEWORK/GetFileAsString");
 		string line = "";
 		while (getline(load, line)) {
-			fileAsString != "\n" + line;
+			fileAsString += "\n" + line;
 		}
 		load.close();
 	}
@@ -86,6 +86,7 @@ void GFRAMEWORK::CompileShader(int shaderType, string fileString)
 			LOGGING::LogError("Failed to compile vertex shader", "Graphics Framework.cpp/GRAMEWORK/CompileShader");
 			string errorMessage = "" + vertexShaderErrorMessage[0];
 			LOGGING::LogError(errorMessage, "Graphics Framework.cpp/GRAMEWORK/CompileShader");
+			globalCriticalError = true;
 		}
 		else {
 			LOGGING::LogSuccess("Compiled vertex shader", "Graphics Framework.cpp/GRAMEWORK/CompileShade");
@@ -104,6 +105,7 @@ void GFRAMEWORK::CompileShader(int shaderType, string fileString)
 			LOGGING::LogError("Failed to compile fragment shader", "Graphics Framework.cpp/GRAMEWORK/CompileShader");
 			string errorMessage = "" + fragmentShaderErrorMessage[0];
 			LOGGING::LogError(errorMessage, "Graphics Framework.cpp/GRAMEWORK/CompileShader");
+			globalCriticalError = true;
 		}
 		else {
 			LOGGING::LogSuccess("Compiled fragment shader", "Graphics Framework.cpp/GRAMEWORK/CompileShade");
@@ -129,6 +131,7 @@ void GFRAMEWORK::LinkProgram()
 		LOGGING::LogError("Failed to link program", "Graphics Framework.cpp/GRAMEWORK/CompileShader");
 		string errorMessage = "" + programErrorMessage[0];
 		LOGGING::LogError(errorMessage, "Graphics Framework.cpp/GRAMEWORK/CompileShader");
+		globalCriticalError = true;
 	}
 	else {
 		LOGGING::LogSuccess("Linked program with ID: " + to_string(programID), "Graphics Framework.cpp/GRAMEWORK/CompileShade");

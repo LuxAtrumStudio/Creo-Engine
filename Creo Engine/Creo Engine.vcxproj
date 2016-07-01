@@ -135,6 +135,8 @@
     <Text Include="Log.log" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Creo\Resources\Fragment Shader.glsl" />
+    <None Include="Creo\Resources\Vertex Shader.glsl" />
     <None Include="Log Code Key.dev" />
   </ItemGroup>
   <ItemGroup>
