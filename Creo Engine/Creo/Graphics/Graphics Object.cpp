@@ -27,7 +27,35 @@ void GOBJECT::Regular2DPolyGenVertices(int sides, float sizeX, float sizeY)
 		x = sin(theta) * sizeX;
 		glm::vec3 vertex;
 		vertex = { x, y, 0 };
-		LOGGING::LogData("(" + to_string(x) + "," + to_string(y) + ")", "DEV");
+		//LOGGING::LogData("(" + to_string(x) + "," + to_string(y) + ")", "DEV");
 		vertices.push_back(vertex);
 	}
+}
+
+void GOBJECT::CreateVertexBuffer()
+{
+	GLfloat* vertexBufferData;
+	vertexBufferData = new GLfloat[vertices.size() * 3];
+	unsigned index = 0;
+	for (unsigned i = 0; i < vertices.size(); i++) {
+		vertexBufferData[index] = vertices[i].x;
+		index = index + 1;
+		vertexBufferData[index] = vertices[i].y;
+		index = index + 1;
+		vertexBufferData[index] = vertices[i].z;
+		index = index + 1;
+	}
+	glGenBuffers(1, &vertexBuffer);
+	glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(vertexBufferData), vertexBufferData, GL_STATIC_DRAW);
+}
+
+void GOBJECT::DrawObject()
+{
+	glEnableVertexAttribArray(0);
+	glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
+	glVertexAttribPointer(0, vertices.size(), GL_FLOAT, GL_FALSE, 0, (void*)0);
+
+	glDrawArrays(GL_TRIANGLES, 0, vertices.size());
+	glDisableVertexAttribArray(0);
 }

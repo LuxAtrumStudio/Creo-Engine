@@ -10,6 +10,10 @@ public:
 	GOBJECT();
 	~GOBJECT();
 	vector<glm::vec3> vertices;
+	GLuint vertexBuffer;
 	void Regular2DPolyGenVertices(int sides, float sizeX, float sizeY);
+	void CreateVertexBuffer();
+
+	void DrawObject();
 private:
 };

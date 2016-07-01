@@ -14,5 +14,15 @@ public:
 
 	void InitializeGLFW();
 	void InitializeGLEW();
+
+	vector<GLuint> programs;
+
+	void LoadShaders(string vertexFilePath, string fragmentFilePath);
+	string GetFileAsString(string filePath);
+	void GenorateShaders();
+	void CompileShader(int shaderType, string fileString);
+	void LinkProgram();
+	GLuint FetchProgramID(int id);
 private:
+	GLuint vertexShaderID, fragmentShaderID;
 };

@@ -12,7 +12,9 @@ int main(int argc, char** argv) {
 	gFramework.InitializeGLEW();
 	gFramework.gWindow.CreateVertexArray();
 	gFramework.gObject.Regular2DPolyGenVertices(3, 1, 1);
+	gFramework.gObject.CreateVertexBuffer();
 	do {
+		gFramework.gObject.DrawObject();
 		glfwSwapBuffers(gFramework.gWindow.window);
 		glfwPollEvents();
 	} while (glfwGetKey(gFramework.gWindow.window, GLFW_KEY_ESCAPE) != GLFW_PRESS && glfwWindowShouldClose(gFramework.gWindow.window) == 0);
