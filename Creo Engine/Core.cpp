@@ -10,8 +10,8 @@ int main(int argc, char** argv) {
 	gFramework.InitializeGLFW();
 	gFramework.gWindow.GenorateWindowFromSettings();
 	gFramework.InitializeGLEW();
-	gFramework.gWindow.CreateVertexArray();
-	gFramework.gObject.Regular2DPolyGenVertices(3, 1, 1);
+	gFramework.CreateVertexArray();
+	gFramework.gObject.Regular2DPolyGenVertices(4, 1, 1);
 	gFramework.gObject.CreateVertexBuffer();
 	gFramework.LoadShaders("Creo/Resources/Vertex Shader.glsl", "Creo/Resources/Fragment Shader.glsl");
 	do {

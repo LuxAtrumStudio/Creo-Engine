@@ -16,6 +16,7 @@ public:
 	void InitializeGLEW();
 
 	vector<GLuint> programs;
+	GLuint VertexArrayID;
 
 	void LoadShaders(string vertexFilePath, string fragmentFilePath);
 	string GetFileAsString(string filePath);
@@ -23,6 +24,8 @@ public:
 	void CompileShader(int shaderType, string fileString);
 	void LinkProgram();
 	GLuint FetchProgramID(int id);
+
+	void CreateVertexArray();
 private:
 	GLuint vertexShaderID, fragmentShaderID;
 };

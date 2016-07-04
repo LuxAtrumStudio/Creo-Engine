@@ -22,20 +22,20 @@ void GOBJECT::Regular2DPolyGenVertices(int sides, float sizeX, float sizeY)
 		thetaStart = -(pi / 2) + (thetaStep / 2);
 	}
 	for (theta = thetaStart; theta < thetaStart + (thetaStep * sides); theta = theta + thetaStep) {
-		float x, y;
-		y = cos(theta) * sizeY;
-		x = sin(theta) * sizeX;
+		double x, y;
+		x = cos(theta);
+		y = sin(theta);
 		glm::vec3 vertex;
 		vertex = { x, y, 0 };
-		//LOGGING::LogData("(" + to_string(x) + "," + to_string(y) + ")", "DEV");
+		LOGGING::LogData(to_string(theta), "THETA");
+		LOGGING::LogData("(" + to_string(x) + "," + to_string(y) + ")", "DEV");
 		vertices.push_back(vertex);
 	}
 }
 
 void GOBJECT::CreateVertexBuffer()
 {
-	GLfloat* vertexBufferData;
-	vertexBufferData = new GLfloat[vertices.size() * 3];
+	GLfloat *vertexBufferData = new GLfloat[vertices.size() * 3];
 	unsigned index = 0;
 	for (unsigned i = 0; i < vertices.size(); i++) {
 		vertexBufferData[index] = vertices[i].x;
@@ -47,7 +47,7 @@ void GOBJECT::CreateVertexBuffer()
 	}
 	glGenBuffers(1, &vertexBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(vertexBufferData), vertexBufferData, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * vertices.size() * 3, vertexBufferData, GL_STATIC_DRAW);
 }
 
 void GOBJECT::DrawObject()

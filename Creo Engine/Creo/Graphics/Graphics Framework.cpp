@@ -148,3 +148,10 @@ GLuint GFRAMEWORK::FetchProgramID(int id)
 {
 	return (programs[id]);
 }
+
+void GFRAMEWORK::CreateVertexArray()
+{
+	glGenVertexArrays(1, &VertexArrayID);
+	glBindVertexArray(VertexArrayID);
+	LOGGING::LogSuccess("Created vertex array", "Graphics Windows.cpp/GWINDOW/CreateVertexArray");
+}

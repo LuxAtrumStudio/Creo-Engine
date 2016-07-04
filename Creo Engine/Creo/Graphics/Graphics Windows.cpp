@@ -51,10 +51,3 @@ void GWINDOWS::MakeCurrent()
 	glfwMakeContextCurrent(window);
 	LOGGING::LogSuccess("Made current window current context", "Graphics Windows.cpp/GWINDOW/MakeCurrent");
 }
-
-void GWINDOWS::CreateVertexArray()
-{
-	glGenVertexArrays(1, &VertexArrayID);
-	glBindVertexArray(VertexArrayID);
-	LOGGING::LogSuccess("Created vertex array", "Graphics Windows.cpp/GWINDOW/CreateVertexArray");
-}
